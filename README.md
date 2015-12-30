@@ -4,7 +4,7 @@ Since I'm not a designer or something, it's probably messy coded.
 
  *Sample posts are taken from [mmistakes](https://github.com/mmistakes/). I edit them just a litle, so don't expect much thing from them.*  
 
- *Sample **pelicanconf.py** file in the repo.*    
+ *Sample pelicanconf.py file in the repo.*    
 
 ***  
 

@@ -34,6 +34,9 @@ Since I'm not a designer or something, it's probably messy coded.
 
 #### Preview
 ![Preview](/Preview-1.png)
+***
 ![Preview](/Preview-2.png)
+***
 ![Preview](/Preview-3.png)
+***
 ![Preview](/Preview-4.png)

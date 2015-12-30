@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - Arşiv{% endblock %}
+{% block content %}
+	<section class="sub-page container">
+		<article class="article">
+			<header>
+				<div class="meta-data">
+					<h3>Archives for {{ SITENAME }}</h3>
+				</div>
+			</header>
+			<div class="entry-content" id="info">
+				<dl>
+				{% for article in dates %}
+					<dt>{{ article.locale_date }}</dt>
+					<dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+				{% endfor %}
+				</dl>
+			</div>
+		</article>
+	</section>
+{% endblock %}

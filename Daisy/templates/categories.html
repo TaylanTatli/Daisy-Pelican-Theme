@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - Kategoriler{% endblock %}
+{% block content %}
+	<section class="sub-page container">
+		<article class="article">
+			<header>
+				<div class="meta-data">
+					<h3>Categories for {{ SITENAME }}</h3>
+				</div>
+			</header>
+			<div class="entry-content" id="info">
+				<ul>
+				{% for category, articles in categories %}
+					<li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+				{% endfor %}
+				</ul>
+			</div>
+		</article>
+	</section>
+{% endblock %}

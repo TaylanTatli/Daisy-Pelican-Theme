@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{% if articles %}
+    {% for article in articles_page.object_list %}
+
+    <section class="main container">
+            <li>
+        <article class="article">
+            <header>
+                <div class="meta-data">
+                    <h3><a href="{{ SITEURL }}/{{ article.url }}" >{{ article.title }}</a></h3>
+
+                    <p class="author">
+                        <time datetime="{{ article.date.isoformat() }}" >{{ article.locale_date }}</time>
+                    </p>
+
+                    <div class="socbtn">
+                        <span class="share"><i class="icon-share"></i></span>
+                        <div class="popup">
+                            <a class="share--googleplus" href="#"><i class="icon-gplus-circled"></i></a>
+                            <a class="share--twitter" href="#"><i class="icon-twitter-circled"></i></a>
+                            <a class="share--facebook" href="#"><i class="icon-facebook-circled"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="entry-content" id="info">
+                {{ article.summary }}
+                <a class="button-text" href="{{ SITEURL }}/{{ article.url }}">Devamını Oku</a>
+                </div><!-- /.entry-content -->
+            <footer>
+				{% include 'taglist.html' %}
+            </footer>
+            </article>
+</li>
+  <!-- /#posts-list -->
+                </section><!-- /#content -->
+    {% endfor %}
+{% endif %}
+{% include 'pagination.html' %}
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - Yazarlar{% endblock %}
+{% block content %}
+	<section class="sub-page container">
+		<article class="article">
+			<header>
+				<div class="meta-data">
+					<h3>Authors on {{ SITENAME }}</h3>
+				</div>
+			</header>
+			<div class="entry-content" id="info">
+			<ul>
+			{% for author, articles in authors|sort %}
+				<li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
+			{% endfor %}
+			</ul>
+			</div>
+		</article>
+	</section>
+{% endblock %}

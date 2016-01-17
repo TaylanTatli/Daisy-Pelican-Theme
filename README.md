@@ -17,7 +17,7 @@ Since I'm not a designer or something, it's probably messy coded.
 <div class='embed-container'><iframe src='https://www.youtube.com/embed//lrDXX3NiVnk' frameborder='0' allowfullscreen></iframe></div>
 ```  
 
-**Most probably, when you set your SITENAME and SITESUBTITLE, they won't look good. To fix it change theese:**  
+**Most probably, when you set your SITENAME and SITESUBTITLE, they won't look good. To fix it, change theese:**  
 *(letter-spacing and text-indent must be same. Set them according to your site.)*  
 ```
 .header .logo h1 {
